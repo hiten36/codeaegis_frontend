@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+  font-family: "Inter", sans-serif !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.search-btn{
+  background-color: #EDE5FF;
+  color: #6C2BD9;
+  padding: 7px 15px;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.detail1{
+  background: rgb(240, 240, 240);
+}
+
+.detail11211{
+  padding-right: 2rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.24);
+  width: 27rem;
+}
+
+.detail11212{
+  padding-left: 2rem;
+}
+
+.det1{
+  margin-bottom: 15px;
+}
+
+.detail11{
+  border-radius: 5px;
+}
+
+.detail1121{
+  border-radius: 5px;
+}
+
+.detail1122{
+  border-radius: 5px;
+}
+
+.detail1121-1{
+  width: 25rem;
+}
+
+.home button{
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .input-nav{
+    display: block !important;
+  }
+  .nav-form{
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-form input{
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .nav-form button{
+    margin-left: 0;
+  }
+  .detail11{
+    flex-direction: column;
+  }
+  .detail112{
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .detail1121{
+    flex-direction: column;
+  }
+  .detail11211{
+    padding-right: 0;
+    border-right: 0;
+    border: none;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .detail11212{
+    padding-left: 0;
+  }
+  .detail12{
+    flex-direction: column;
+  }
+  .detail1121-1{
+    width: 100%;
+  }
 }
